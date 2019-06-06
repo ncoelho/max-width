@@ -82,7 +82,7 @@
         }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
-            color: $dark-blue;
+            color: $theme-primary;
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .9);
