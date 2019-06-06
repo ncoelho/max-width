@@ -7,7 +7,7 @@ section.contact {
         margin-top: 0px;
         margin-bottom: 24px;
         font-weight: 600;
-        color: $dark-blue;
+        color: $theme-primary;
     }
     p {
         font-size: 16px;
@@ -24,10 +24,10 @@ section.contact {
             margin-top: 24px;
         }
         a {
-            color: $dark-blue;
+            color: $theme-primary;
         }
         a:hover {
-            color: $light-blue;
+            color: $theme-primary;
         }
     }
     .reach {
