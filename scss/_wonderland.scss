@@ -1,0 +1,52 @@
+.wonderland {
+
+}
+.first {
+    p {
+        font-size: 16px;
+        color: #494949;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+    h1 {
+    font-weight: bolder;
+    margin: 80px 0 24px 0;
+        span {
+            font-weight: 400;
+        }
+        @media (min-width: 992px) {
+           font-size: 77px;
+        }
+    }
+    .btn {
+        padding: 20px 24px 20px 64px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 28px;
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
+        span {
+            float: right; 
+            background: #fff;
+            color: $main-color;
+            padding: 4px 16px;
+            border-radius: 4px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+}
+.bigimg {
+    text-align: center;
+}
+.bigimg img {
+    width: 100%;
+    max-width: 360px;
+    max-height: 670px;
+}
+@media (max-width: 992px) {
+
+	.first h2 {
+		font-size: 22px;
+	}
+}  
