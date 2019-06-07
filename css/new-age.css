@@ -999,11 +999,7 @@ section.lndhub button {
 
 @media (max-width: 991px) {
   .first .btn {
-    position: fixed;
-    bottom: 20px;
-    width: 92%;
-    z-index: 1;
-    padding: 16px 22px;
+    margin-bottom: 90px;
   }
 }
 
@@ -1064,6 +1060,7 @@ section.lndhub button {
 @media (max-width: 991px) {
   .components h2, .custom h2, .lightdark h2, .templates h2 {
     text-align: center;
+    margin-bottom: 40px;
   }
 }
 
@@ -1075,6 +1072,7 @@ section.lndhub button {
 @media (max-width: 991px) {
   .components p, .custom p, .lightdark p, .templates p {
     text-align: left !important;
+    margin-bottom: 40px;
   }
 }
 
