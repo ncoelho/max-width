@@ -1000,7 +1000,7 @@ section.lndhub button {
 @media (max-width: 991px) {
   .first .btn {
     position: fixed;
-    bottom: 36px;
+    bottom: 20px;
     width: 92%;
     z-index: 1;
     padding: 16px 22px;
