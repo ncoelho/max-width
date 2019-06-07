@@ -1,4 +1,9 @@
 // Styling for the navbar
+.navbar a {
+    @media (max-width: 991px) {
+        margin: 0 auto;
+    }
+}
 #mainNav {
     border-color: fade-out($gray-darker, .95);
     background-color: white;

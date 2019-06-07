@@ -2,6 +2,14 @@
 
 }
 .first {
+    @media (min-width: 992px) {
+        height: 100vh;
+    }
+    @media (max-width: 991px) {
+        .mobile {
+            order: 2;
+        }
+    }
     p {
         font-size: 16px;
         color: #494949;
@@ -17,9 +25,13 @@
         @media (min-width: 992px) {
            font-size: 77px;
         }
+        @media (max-width: 991px) {
+            margin-top: 40px;
+            text-align: center;
+        }
     }
     .btn {
-        padding: 20px 24px 20px 64px;
+        padding: 22px 24px 22px 64px;
         border-radius: 4px;
         font-weight: bold;
         font-size: 28px;
@@ -34,15 +46,75 @@
             font-size: 18px;
             line-height: 21px;
         }
+        @media (max-width: 991px) {
+            position: fixed;
+            bottom: 36px;
+            width: 92%;
+            z-index: 1;
+            padding: 16px 22px;
+        }
     }
 }
 .bigimg {
     text-align: center;
+     @media (max-width: 991px) {
+        margin-top: 32px;
+    }
 }
 .bigimg img {
     width: 100%;
     max-width: 360px;
     max-height: 670px;
+}
+.components {
+    background: #f5f5f5;
+    img {
+        max-width: 358px;
+    }
+}
+.custom { 
+    img {
+        width: 100%;
+        text-align: right;
+    }
+}
+.lightdark {
+    background: #f5f5f5;
+    img {
+        width: 90%;
+    }
+}
+.components, .custom, .lightdark, .templates {
+    @media (min-width: 992px) {
+        height: 100vh;
+    }
+    @media (max-width: 991px) {
+        .mobile {
+            order: 2;
+        }
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 40px;
+        @media (max-width: 991px) {
+            text-align: center;
+            }
+         }
+    p {
+        font-size: 16px;
+        color: #494949;
+        @media (max-width: 991px) {
+            text-align: left !important;
+         }
+   }
+    .row {
+        height: -moz-available;          /* WebKit-based browsers will ignore this. */
+        height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        height: fill-available;
+    }
+    .comp {
+        height: 100%;
+    }
 }
 @media (max-width: 992px) {
 

@@ -68,6 +68,12 @@ section h2 {
   }
 }
 
+@media (max-width: 991px) {
+  .navbar a {
+    margin: 0 auto;
+  }
+}
+
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
@@ -931,6 +937,18 @@ section.lndhub button {
   color: #ffffff;
 }
 
+@media (min-width: 992px) {
+  .first {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .first .mobile {
+    order: 2;
+  }
+}
+
 .first p {
   font-size: 16px;
   color: #494949;
@@ -953,8 +971,15 @@ section.lndhub button {
   }
 }
 
+@media (max-width: 991px) {
+  .first h1 {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
 .first .btn {
-  padding: 20px 24px 20px 64px;
+  padding: 22px 24px 22px 64px;
   border-radius: 4px;
   font-weight: bold;
   font-size: 28px;
@@ -972,14 +997,97 @@ section.lndhub button {
   line-height: 21px;
 }
 
+@media (max-width: 991px) {
+  .first .btn {
+    position: fixed;
+    bottom: 36px;
+    width: 92%;
+    z-index: 1;
+    padding: 16px 22px;
+  }
+}
+
 .bigimg {
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  .bigimg {
+    margin-top: 32px;
+  }
 }
 
 .bigimg img {
   width: 100%;
   max-width: 360px;
   max-height: 670px;
+}
+
+.components {
+  background: #f5f5f5;
+}
+
+.components img {
+  max-width: 358px;
+}
+
+.custom img {
+  width: 100%;
+  text-align: right;
+}
+
+.lightdark {
+  background: #f5f5f5;
+}
+
+.lightdark img {
+  width: 90%;
+}
+
+@media (min-width: 992px) {
+  .components, .custom, .lightdark, .templates {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .components .mobile, .custom .mobile, .lightdark .mobile, .templates .mobile {
+    order: 2;
+  }
+}
+
+.components h2, .custom h2, .lightdark h2, .templates h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media (max-width: 991px) {
+  .components h2, .custom h2, .lightdark h2, .templates h2 {
+    text-align: center;
+  }
+}
+
+.components p, .custom p, .lightdark p, .templates p {
+  font-size: 16px;
+  color: #494949;
+}
+
+@media (max-width: 991px) {
+  .components p, .custom p, .lightdark p, .templates p {
+    text-align: left !important;
+  }
+}
+
+.components .row, .custom .row, .lightdark .row, .templates .row {
+  height: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+}
+
+.components .comp, .custom .comp, .lightdark .comp, .templates .comp {
+  height: 100%;
 }
 
 @media (max-width: 992px) {
