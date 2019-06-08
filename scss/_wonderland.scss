@@ -80,13 +80,16 @@
         width: 90%;
     }
 }
-.components, .custom, .lightdark, .templates {
+.components, .custom, .lightdark, .templates, .buyit {
     @media (min-width: 992px) {
         height: 100vh;
     }
     @media (max-width: 991px) {
         .mobile {
             order: 2;
+        }
+        div {
+           text-align: center;
         }
     }
     h2 {
@@ -105,13 +108,49 @@
             margin-bottom: 40px;
          }
    }
-    .row {
-        height: -moz-available;          /* WebKit-based browsers will ignore this. */
-        height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-        height: fill-available;
+   @media (min-width: 992px) {
+        .row {
+            height: -moz-available;          /* WebKit-based browsers will ignore this. */
+            height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+            height: fill-available;
+        }
     }
     .comp {
         height: 100%;
+    }
+}
+.buyit {
+    .pricetable {
+        padding: 24px;
+        border-radius: 4px;
+        box-shadow: 0 1px 46px 11px rgba(13,45,75,0.1);
+        h4 {
+            font-weight: bold;
+            font-size: 22px;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 30px;
+            color: $main-color;
+            margin: 68px 0 0 0;
+        }
+        span {
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 32px;
+            display: block;
+        }
+        .btn {
+            padding: 16px 24px 16px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
+        }
+        @media (max-width: 991px) {
+            margin: 24px;
+        }
     }
 }
 @media (max-width: 992px) {
