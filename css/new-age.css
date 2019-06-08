@@ -25,7 +25,7 @@ hr.light {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 h1,
@@ -666,6 +666,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding-left: 0;
 }
 
+@media (max-width: 991px) {
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
 .btn-outline {
   color: white;
   border: 1px solid;
@@ -1041,51 +1048,96 @@ section.lndhub button {
 }
 
 @media (min-width: 992px) {
-  .components, .custom, .lightdark, .templates {
+  .components, .custom, .lightdark, .templates, .buyit {
     height: 100vh;
   }
 }
 
 @media (max-width: 991px) {
-  .components .mobile, .custom .mobile, .lightdark .mobile, .templates .mobile {
+  .components .mobile, .custom .mobile, .lightdark .mobile, .templates .mobile, .buyit .mobile {
     order: 2;
+  }
+  .components div, .custom div, .lightdark div, .templates div, .buyit div {
+    text-align: center;
   }
 }
 
-.components h2, .custom h2, .lightdark h2, .templates h2 {
+.components h2, .custom h2, .lightdark h2, .templates h2, .buyit h2 {
   font-weight: bold;
   font-size: 40px;
 }
 
 @media (max-width: 991px) {
-  .components h2, .custom h2, .lightdark h2, .templates h2 {
+  .components h2, .custom h2, .lightdark h2, .templates h2, .buyit h2 {
     text-align: center;
     margin-bottom: 40px;
   }
 }
 
-.components p, .custom p, .lightdark p, .templates p {
+.components p, .custom p, .lightdark p, .templates p, .buyit p {
   font-size: 16px;
   color: #494949;
 }
 
 @media (max-width: 991px) {
-  .components p, .custom p, .lightdark p, .templates p {
+  .components p, .custom p, .lightdark p, .templates p, .buyit p {
     text-align: left !important;
     margin-bottom: 40px;
   }
 }
 
-.components .row, .custom .row, .lightdark .row, .templates .row {
-  height: -moz-available;
-  /* WebKit-based browsers will ignore this. */
-  height: -webkit-fill-available;
-  /* Mozilla-based browsers will ignore this. */
-  height: fill-available;
+@media (min-width: 992px) {
+  .components .row, .custom .row, .lightdark .row, .templates .row, .buyit .row {
+    height: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+  }
 }
 
-.components .comp, .custom .comp, .lightdark .comp, .templates .comp {
+.components .comp, .custom .comp, .lightdark .comp, .templates .comp, .buyit .comp {
   height: 100%;
+}
+
+.buyit .pricetable {
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 1px 46px 11px rgba(13, 45, 75, 0.1);
+}
+
+.buyit .pricetable h4 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.buyit .pricetable h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #0070FF;
+  margin: 68px 0 0 0;
+}
+
+.buyit .pricetable span {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.buyit .pricetable .btn {
+  padding: 16px 24px 16px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 991px) {
+  .buyit .pricetable {
+    margin: 24px;
+  }
 }
 
 @media (max-width: 992px) {

@@ -13,7 +13,12 @@
     padding-right: 0;
     padding-left: 0;
 }
-
+.container {
+     @media (max-width: 991px) {
+        padding-right: 24px;
+        padding-left: 24px;
+     }
+}
 .btn-outline {
     color: white;
     border: 1px solid;
