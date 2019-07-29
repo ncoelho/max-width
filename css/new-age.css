@@ -1007,20 +1007,12 @@ a.mac {
   box-shadow: 0 0 0 0 transparent;
 }
 
-.home .placeholder {
-  background: #fafafa;
-  border-radius: 8px;
-  border: 1px solid #BCBABA;
-  width: 100%;
-  height: 240px;
-}
-
 .home .titles {
   padding: 16px 0;
 }
 
 .home .titles h2 {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
   display: inline-block;
   color: #000;
