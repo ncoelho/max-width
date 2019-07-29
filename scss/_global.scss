@@ -11,7 +11,10 @@ body {
 }
 
 a {
-    color: $theme-primary;
+    color: $main-color;
+    &:hover {
+      color: $main-color;
+    }
 }
 
 hr {
