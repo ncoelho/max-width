@@ -1,53 +1,31 @@
+$wonder: #31B4F2;
 .wonderland {
-
-}
-.first {
-    @media (min-width: 992px) {
-        height: 100vh;
-    }
-    @media (max-width: 991px) {
-        .mobile {
-            order: 2;
+    .btn-primary {
+        background-color: $wonder;
+        border-color: $wonder;
+        &:hover {
+            background: #289FD7 !important;
+        }
+        &:active, &:focus {
+            box-shadow: 0 0 0 0 transparent !important;
+            outline: 0px !important;
+            border: 1px solid $wonder !important;
+            transform: all 0.2 ease-in-out;
         }
     }
-    p {
-        font-size: 16px;
-        color: #494949;
-        line-height: 26px;
-        margin-bottom: 32px;
-    }
-    h1 {
-    font-weight: bolder;
-    margin: 80px 0 24px 0;
-        span {
-            font-weight: 400;
+    .btn-outline-primary {
+        border-color: $wonder;
+        color: $wonder;
+        &:hover {
+            background: #F3FAFF !important;
+            box-shadow: 0 0 0 transparent;
         }
-        @media (min-width: 992px) {
-           font-size: 77px;
-        }
-        @media (max-width: 991px) {
-            margin-top: 40px;
-            text-align: center;
-        }
-    }
-    .btn {
-        padding: 22px 24px 22px 64px;
-        border-radius: 4px;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 28px;
-        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
-        span {
-            float: right; 
-            background: #fff;
-            color: $main-color;
-            padding: 4px 16px;
-            border-radius: 4px;
-            font-size: 18px;
-            line-height: 21px;
-        }
-        @media (max-width: 991px) {
-            margin-bottom: 90px;
+        &:active, &:focus {
+            background: #F3FAFF !important;
+            color: $wonder !important;
+            box-shadow: 0 0 0 0 transparent !important;
+            outline: 0px !important;
+            border: 2px solid $wonder !important;
         }
     }
 }
@@ -62,31 +40,136 @@
     max-width: 360px;
     max-height: 670px;
 }
-.components {
+.lightsoff {
+    padding: 90px 0;
+    background: #434A4E;
+    color: #fff;
+    position: relative;
+    p {
+    margin-bottom: 0px;
+    }
+    &.dime {
     background: #f5f5f5;
+    position: relative;
+    color: #000;
+    }
+  @media (min-width: 992px) {
+        
+    }
     img {
+        max-width: 880px;
+        width: 100%;
+        max-height: 900px;
+        padding: 10px;
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+    ul {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: left;
+      li {
+        line-height: 42px;
+      }
+    }
+}
+
+.video {
+  padding: 80px 0;
+  z-index: 9999;
+  background: #fff;
+    .macbook {
+        .book {
+        transition: all .4s ease-in-out;
+        position: relative;
+        }
+        &:hover .book  {
+            -webkit-filter: blur(3.5px); /* Safari 6.0 - 9.0 */
+            filter: blur(3.5px);
+        }
+      
+    }
+    .macbook {
+      position: relative;
+      .play {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+        top: 50%;
+        margin-top: -50px;
+        opacity: .0;
+        transition: all .4s ease-in-out;
+      }
+      &:hover {
+        .play {
+          opacity: 1;
+        }
+      }
+    }
+    h2 {
+       @media (min-width: 992px) {
+        font-size: 66px;
+      }
+      margin-bottom: 32px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 32px;
+      @media (min-width: 992px) {
+      margin-bottom: 10px;
+      }
+    }
+}
+.faq {
+  p {
+    font-size: 20px !important;
+  }
+  h2 {
+        padding: 30px 0 60px 0;
+        font-weight: bold;
+        margin-bottom: 52px;
+        
         @media (min-width: 992px) {
-        max-width: 358px;
+          font-size: 66px;
+        }
+        @media (max-width: 991px) {
+            text-align: center;
+            margin-bottom: 40px;
+            }
+         }
+}
+.follow {
+    margin: 200px 0;
+}
+.wondertheme {
+    background: $wonder;
+    padding-bottom: 180px;
+    color: #fff;
+    img {
+    border-radius: 24px;
+    box-shadow: 0 2px 83px 0px rgba(0,0,0,.17)
+    }
+    @media (max-width: 991px) {
+    img {
+        border-radius: 8px;
+        }
+    h2 {
+        padding: 48px 0 32px 0;
+        }
+    }
+    @media (min-width: 992px) {
+        h2 {
+        padding: 90px 0 66px 0;
         }
     }
 }
-.custom { 
-    img {
-        width: 100%;
-        text-align: right;
-    }
-}
-.lightdark {
-    background: #f5f5f5;
-    img {
-        width: 90%;
-    }
-}
-.components, .custom, .lightdark, .templates, .buyit {
-    @media (min-width: 992px) {
-        height: 100vh;
-    }
+.components, .lightsoff, .buyit, .wondertheme {
     @media (max-width: 991px) {
+      padding: 64px 0;
         .mobile {
             order: 2;
         }
@@ -96,40 +179,58 @@
     }
     h2 {
         font-weight: bold;
-        font-size: 40px;
-        @media (max-width: 991px) {
-            text-align: center;
-            margin-bottom: 40px;
-            }
+        
+        margin-bottom: 52px;
+        @media (min-width: 992px) {
+          font-size: 66px;
+        }
          }
     p {
-        font-size: 16px;
-        color: #494949;
+        font-size: 24px;
         @media (max-width: 991px) {
             text-align: left !important;
-            margin-bottom: 40px;
+            
          }
    }
-   @media (min-width: 992px) {
+    .comp {
+        height: 100%;
+    }
+}
+.buyit {
+  img {
+    width: 180px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 992px) {
+        height: 100vh;
         .row {
             height: -moz-available;          /* WebKit-based browsers will ignore this. */
             height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
             height: fill-available;
         }
     }
-    .comp {
-        height: 100%;
+    h2 {
+      color: $theme-primary;
+      padding: 10px 0 90px 0;
+    }
+    p {
+      font-size: 16px;
     }
 }
-.buyit {
+.buyit, .follow {
+
     .pricetable {
         padding: 24px;
         border-radius: 8px;
         box-shadow: 0 1px 46px 11px rgba(13,45,75,0.1);
         transition: all 0.5s ease;
+
+        .btn-outline-primary {
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1) !important;
+        }
+
         &:hover {
             box-shadow: 0 1px 20px 11px rgba(13,45,75,0.1);
-            transform: scale(0.96);
         }
         small {
             font-size: 17px;
@@ -138,17 +239,36 @@
             font-weight: bold;
             font-size: 22px;
         }
+        ul {
+          text-align: left;
+          list-style: none;
+        }
+        ul li:before {
+          content: '✔ ';
+          color: $wonder;
+        }
+        ul li.no:before {
+          content: '✖ ';
+          color: $gray-light;
+        }
         h3 {
             font-weight: bold;
             font-size: 30px;
-            color: $main-color;
-            margin: 68px 0 0 0;
+            color: $wonder;
+            margin: 24px 0 0 0;
+        }
+        h4 {
+          margin-bottom: 24px;  
         }
         span {
             font-weight: bold;
             font-size: 30px;
-            margin-bottom: 32px;
             display: block;
+            font-family: "helvetica neue";
+        }
+        strong {
+            margin-bottom: 24px;
+            display: inline-block;
         }
         .btn {
             padding: 16px 24px 16px 24px;
@@ -163,24 +283,14 @@
         }
     }
 }
-@media (max-width: 992px) {
 
-	.first h2 {
-		font-size: 22px;
-	}
+a.mac {
+  width: 100%;
+  cursor: pointer;
 }
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 1.5s;
-}
-.already-visible {
-  transform: translateY(0);
-  animation: none;
-}
+@media (max-width: 991px) {
 
-@keyframes come-in {
-  to { transform: translateY(0); }
+  .first h2 {
+    font-size: 22px;
+  }
 }

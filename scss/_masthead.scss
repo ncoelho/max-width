@@ -1,126 +1,73 @@
-// Styling for the masthead
-section.masthead {
-    position: relative;
-    width: 100%;
+.masthead {
     @media (min-width: 992px) {
-        padding-top: 60px;
+        height: 100vh;
     }
-
-    .preview {
-        background: #FAFAFA;
-        border: 1px solid #BCBABA;
-        border-radius: 4px;
-        min-height: 240px;
+    .size {
+        height: 67vh;
     }
-    .titles {
-        padding: 16px 0;
-        position: relative;
-        h2 {
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 0;
-        }
-        .price {
-            position: absolute;
-            top: 16px;
-            right: 0;
-            background: $main-color;
-            padding: 5px 16px;
-            border-radius: 4px;
-            color: white;
-            font-weight: bold;
-        }
-    }
-
-    color: $theme-primary;
-    background: white;
-    .header-content {
-        margin-bottom: 20px;
-        text-align: center;
-        h1 {
-            font-weight: 400;
-            font-size: 22px;
-            margin-bottom: 0px;
-        }
-        h2 {
-            font-size: 30px;
-            font-weight: 600;
-        }
-         @media (max-width: 991px) {
-            h1 {
+    
+    p {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 52px;
+        @media (max-width: 576px) {
             font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 60px;
+        }
+    }
+    h1 {
+    font-weight: bolder;
+    
+        span {
+            font-weight: 400;
+        }
+        @media (min-width: 992px) {
+            margin: 0 0;
+            font-size: 80px;
+            line-height: 90px;
+        }
+        @media (max-width: 991px) {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 4em;
+        }
+    }
+    .btn {
+        padding: 24px 66px 24px 66px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 28px;
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
+    .btn-primary {
+        background-color: $main-color;
+        border-color: $main-color;
+        }
+    }
+    .btn-outline-primary {
+            box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1);
+            border: 2px solid $main-color;
+            i {
+                font-size: 28px;
+                margin-right: 8px;
             }
-            h2 {
-            font-size: 28px
-            }
+        }
+    .compatible {
+        margin-top: 56px;
+        @media (max-width: 991px) { 
+            margin: 56px 0;
+        }
+        color: #757575;
+        font-size: 24px;
+        p {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 4px;
         }
 
     }
-     @media (max-width: 991px) {
-        .header-content {
-        margin-bottom: 40px;
-        }
-    }
-     @media (min-width: 992px) {
-        .cta li:first-child {
-            float: left;
-        }
-        .cta li {
-        margin: 0 auto;
-        text-align: center;
-        }
-    }
-    @media (max-width: 991px) {
-        .cta li {
-        margin: 0 auto 32px 0;
-        text-align: center;
-        width: 50%;
-        float: left;
-        }
-        .cta li img{ 
-        width: 150px;
-        max-width: 100%;
-        }
-    }
-    .device-container {
-        max-width: 325px;
-        margin-right: auto;
-        margin-left: auto;
-        .bluebig img {
-                width: 100%;
-        }
-    }
-    @media (min-width: 992px) {
-        height: 60vh;
-        min-height: 530px;
-        padding-top: 0;
-        padding-bottom: 0;
-        .header-content {
-            text-align: left;
-            h2 {
-                font-size: 50px;
-            }
-        }
-        .device-container {
-            max-width: 100%;
-            bottom: 0;
-            position: absolute;
-        }
-    }
-}
-section.features .flightning button {
-    margin-bottom: 0px;
-    padding: 12px 60px !important;
-}
-@media(max-width: 768px) {
-        .desktop {
-            display: none;
-        }
-    }
-.desktop a {
-    padding: 16px 0px;
-    border-radius: 40px;
-    margin: 0 0;
-    display: inline-block;
-    text-decoration: underline;
 }

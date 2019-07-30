@@ -1,10 +1,11 @@
 // Bootstrap overrides for this template
 .bg-primary {
-    background: $theme-primary;
-    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
-    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
-}
-
+    background: $main-color;
+    background: -webkit-linear-gradient($main-color, darken($main-color, 5%));
+    background: linear-gradient($main-color, darken($main-color, 5%));
+    background-color: $main-color;
+    border-color: $main-color;
+}   
 .text-primary {
     color: $theme-primary;
 }
@@ -28,11 +29,36 @@
     &:active,
     &.active {
         color: white;
-        border-color: $theme-primary;
-        background-color: $theme-primary;
+        border-color: $main-color;
+        background-color: $main-color;
     }
 }
-
+.modal {
+    background: #000;
+}
+.modal-dialog {
+    max-width: 100%;
+    background: transparent;
+    border: 0px solid transparent;
+}
+.modal-content {
+    height: 95vh;
+    width: 90vw;
+    margin: 0 auto;
+    background: transparent;
+    border: 0px solid transparent;
+}
+.modal-header {
+    border: 0px solid transparent;
+}
+button.close {
+    position: fixed;
+    top: 8px;
+    right: 24px;
+    background: #fff;
+    border-radius: 50%;
+    width: 56px;
+}
 .btn {
     border-radius: 300px;
     @include alt-font;

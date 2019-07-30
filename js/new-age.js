@@ -73,7 +73,7 @@
 
 var win = $(window);
 
-var allMods = $(".my-auto");
+var allMods = $(".move");
 
 allMods.each(function(i, el) {
   var el = $(el);
